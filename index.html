@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+  <!-- Navbar -->
+	<nav class="bg-blue-950 fixed w-full z-20 top-0 start-0 border-b border-default">
+	  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+		<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+			<img src="images/logo.png" class="h-7 rounded-xl" alt="company Logo" />
+			<span class="self-center text-xl text-heading text-white font-semibold whitespace-nowrap">Live Property</span>
+		</a>
+		<!--<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary text-white" aria-controls="navbar-default" aria-expanded="false">
+			<span class="sr-only">Open main menu</span>
+			<svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+		</button>-->
+		<div class="md:hidden">
+			<input type="checkbox" id="menu-toggle" class="peer hidden">
+
+			<label for="menu-toggle" class="cursor-pointer text-white">
+				<svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+				</svg>
+			</label>
+
+			<div class="hidden peer-checked:block absolute top-full left-0 w-full bg-blue-950">
+				<ul class="flex flex-col p-4 gap-4 text-white">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Find a Property</a></li>
+					<li><a href="#">List a Property</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hidden w-full md:block md:w-auto" id="navbar-default">
+		  <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+			<li>
+			  <a href="#" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent text-white md:text-fg-brand md:p-0" aria-current="page">Home</a>
+			</li>
+			<li>
+			  <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 text-white  md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Find a Property</a>
+			</li>
+			<li>
+			  <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 text-white  md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">List a Property</a>
+			</li>
+			<li>
+			  <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 text-white  md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
+			</li>
+			<li>
+			  <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 text-white  md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About Us</a>
+			</li>
+			<li>
+			  <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0  text-white md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<!-- Main Section-->
+	<main>
+		<!-- hero section-->
+		<section class="bg-[url('https://media.istockphoto.com/id/1468396766/photo/sustainble-green-building-eco-friendly-building-sustainable-glass-office-building-with-tree.jpg?s=612x612&w=0&k=20&c=fx2SQQxPmKY6oUpR-ZcJEB5K3dYJIpSFwVC0sM2FIW0=')] bg-cover bg-center pt-80 pe-20 ps-10 pb-5 text-white">
+			<p class="text-3xl md:text-5xl lg:text-7xl font-bold leading-none mt-10 tracking-wider">LIVE BETTER.<span class="text-orange-500"> INVEST WISE</span> <br>
+			GROW WEALTH.</p>
+			<p class="text-2xl md:text-3xl lg:text-4xl font-semibold mt-3 leading-none text-slate-300"> Real estate solutions built for progress.</p>
+		</section>
+		<!-- -->
+		<section class="bg-white text-center px-5 py-10">
+			<h2 class="text-2xl md:text-3xl font-extrabold text-blue-950  tracking-wide">TOP PICKS THIS MONTH</h2>
+			<p class="mt-5 text-lg">Properties chosen for location, yield, and long-term value.</p>
+				
+			<!-- Cards -->
+			<div class="flex gap-6 overflow-x-auto pb-5 pt-20">
+
+				<!-- Card -->
+				<div class="min-w-[320px] bg-white rounded-xl shadow-lg overflow-hidden">
+					<img src="https://cdn.houseplansservices.com/content/t4nittq8jgifqkfgeghr5hmtqm/w991x660.jpg?v=9" alt="Modern house" class="w-full h-56 object-cover">
+					<div class="p-5">
+						<h3 class="text-xl font-bold text-blue-950">Modern Family Home</h3>
+						<p class="text-gray-500 mt-2">Pune, Maharashtra</p>
+						<p class="text-lg font-bold text-blue-950 mt-4">
+							₹85 Lakh
+						</p>
+
+						<div class="flex gap-5 mt-4 text-sm text-gray-600">
+							<span>3 Beds</span>
+							<span>2 Baths</span>
+							<span>1800 sq.ft</span>
+						</div>
+
+						<button class="mt-5 w-full bg-blue-950 text-white py-2 rounded-lg hover:bg-blue-900">
+							View Property
+						</button>
+
+					</div>
+				</div>
+
+				<!-- Card -->
+				<div class="min-w-[320px] bg-white rounded-xl shadow-lg overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWENvvlNc7KCOIkwDydcip6U_2k0eB1c92G65rcvOxEA&s=10" alt="Commercial office building" class="w-full h-56 object-cover">
+					<div class="p-5">
+						<h3 class="text-xl font-bold text-blue-950">
+							Commercial office
+						</h3>
+						<p class="text-gray-500 mt-2">
+							Chhatrapati Sambhajinagar
+						</p>
+						<p class="text-lg font-bold text-blue-950 mt-4">
+							₹1.2 Crore
+						</p>
+						<div class="flex gap-5 mt-4 text-sm text-gray-600">
+							<span>5 rooms</span>
+							<span>2 WC</span>
+							<span>2400 sq.ft</span>
+						</div>
+						<button class="mt-5 w-full bg-blue-950 text-white py-2 rounded-lg hover:bg-blue-900">
+							View Property
+						</button>
+					</div>
+				</div>
+
+				<!-- Card -->
+				<div class="min-w-[320px] bg-white rounded-xl shadow-lg overflow-hidden">
+					<img src="https://media.istockphoto.com/id/1320071761/photo/land-plot-in-aerial-view-for-development-or-investment.jpg?s=612x612&w=0&k=20&c=LuUFrl_Nf7Pj5P2yvjW-0N8lcWS2723IcjDOai8jKDo=" alt="Plot land" class="w-full h-56 object-cover">
+					<div class="p-5">
+						<h3 class="text-xl font-bold text-blue-950">
+							Plot of land
+						</h3>
+						<p class="text-gray-500 mt-2">
+							Nashik, Maharashtra
+						</p>
+						<p class="text-lg font-bold text-blue-950 mt-4">
+							₹50 Lakh
+						</p>
+						<div class="flex gap-5 mt-4 text-sm text-gray-600">
+							<span>1750 sq.ft</span>
+						</div>
+						<button class="mt-5 w-full bg-blue-950 text-white py-2 rounded-lg hover:bg-blue-900">
+							View Property
+						</button>
+					</div>
+				</div>
+
+				<!-- Card -->
+				<div class="min-w-[320px] bg-white rounded-xl shadow-lg overflow-hidden">
+					<img src="https://thumbs.dreamstime.com/b/aerial-view-green-field-position-point-boundary-line-to-show-location-area-tract-land-owned-sale-development-rent-buy-208416316.jpg" alt="Farm land" class="w-full h-56 object-cover">
+					<div class="p-5">
+						<h3 class="text-xl font-bold text-blue-950">Agricultural land</h3>
+						<p class="text-gray-500 mt-2">Pune, Maharashtra</p>
+						<p class="text-lg font-bold text-blue-950 mt-4">
+							₹85 Lakh
+						</p>
+
+						<div class="flex gap-5 mt-4 text-sm text-gray-600">
+							<span>2000 sq.ft</span>
+						</div>
+
+						<button class="mt-5 w-full bg-blue-950 text-white py-2 rounded-lg hover:bg-blue-900">
+							View Property
+						</button>
+
+					</div>
+				</div>
+
+				<!-- Card -->
+				<div class="min-w-[320px] bg-white rounded-xl shadow-lg overflow-hidden">
+					<img src="https://luxurystays.in/villas/AzulD/BD1.jpg" alt="Luxury villa" class="w-full h-56 object-cover">
+					<div class="p-5">
+						<h3 class="text-xl font-bold text-blue-950">
+							Luxury Villa
+						</h3>
+						<p class="text-gray-500 mt-2">
+							Chhatrapati Sambhajinagar
+						</p>
+						<p class="text-lg font-bold text-blue-950 mt-4">
+							₹1.2 Crore
+						</p>
+						<div class="flex gap-5 mt-4 text-sm text-gray-600">
+							<span>4 Beds</span>
+							<span>3 Baths</span>
+							<span>2400 sq.ft</span>
+						</div>
+						<button class="mt-5 w-full bg-blue-950 text-white py-2 rounded-lg hover:bg-blue-900">
+							View Property
+						</button>
+					</div>
+				</div>
+
+				<!-- Card -->
+				<div class="min-w-[320px] bg-white rounded-xl shadow-lg overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5HJTJkEV28K6aaqbxVrhdQTTceQXXhDh2J4PP04dZevZlHSrMNdLnaIa9&s=10" alt="Residential property" class="w-full h-56 object-cover">
+					<div class="p-5">
+						<h3 class="text-xl font-bold text-blue-950">
+							Green Residence
+						</h3>
+						<p class="text-gray-500 mt-2">
+							Nashik, Maharashtra
+						</p>
+						<p class="text-lg font-bold text-blue-950 mt-4">
+							₹72 Lakh
+						</p>
+						<div class="flex gap-5 mt-4 text-sm text-gray-600">
+							<span>3 Beds</span>
+							<span>2 Baths</span>
+							<span>1650 sq.ft</span>
+						</div>
+						<button class="mt-5 w-full bg-blue-950 text-white py-2 rounded-lg hover:bg-blue-900">
+							View Property
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<!-- Statistics -->
+			<div class="my-10">
+				<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+					<div class="bg-blue-50 p-6 rounded-xl m-5">
+						<p class="text-3xl font-bold text-blue-950">
+							1200+
+						</p>
+						<p class="mt-2 text-gray-600">
+							Properties Listed
+						</p>
+					</div>
+					<div class="bg-blue-50 p-6 rounded-xl m-5">
+						<p class="text-3xl font-bold text-blue-950">
+							2000+
+						</p>
+						<p class="mt-2 text-gray-600">
+							Happy Clients
+						</p>
+					</div>
+					<div class="bg-blue-50 p-6 rounded-xl m-5">
+						<p class="text-3xl font-bold text-blue-950">
+							10+
+						</p>
+						<p class="mt-2 text-gray-600">
+							Years of Experience
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- Trusted Agents -->
+		<section class="bg-blue-100 px-5 py-12 mt-20">
+
+			<h2 class="text-2xl md:text-3xl font-extrabold text-blue-950 text-center tracking-wide">
+				TRUSTED AGENTS
+			</h2>
+			<p class="text-center mt-3 text-orange-500">
+				Get guidance from experienced property professionals.
+			</p>
+			<!-- Agent Cards -->
+			<div class="flex gap-6 overflow-x-auto snap-x snap-mandatory py-8">
+
+				<!-- Agent Card -->
+				<div class="min-w-[280px] sm:min-w-[300px] md:min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-blue-100 snap-center flex-shrink-0">
+					<div class="flex flex-col items-center">
+						<img class="w-24 h-24 mb-5 rounded-2xl object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--3QsUI4T6giI-ZXy1spL4N10jtZdNwPDCLWhyeFnNA&s=10" alt="Lara Dev">
+						<h5 class="text-xl font-semibold tracking-tight text-blue-950">
+							Lara Dev
+						</h5>
+						<span class="text-sm text-gray-500 mt-1">
+							Expert Advisor
+						</span>
+						<!-- Buttons -->
+						<div class="flex flex-col w-full gap-3 mt-6">
+							<button type="button" class="w-full bg-blue-950 text-white font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-blue-900 transition duration-200">
+								Request Assistance
+							</button>
+							<button type="button"class="w-full bg-white text-blue-950 font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500  transition duration-200">
+								Message
+							</button>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Agent Card -->
+				<div class="min-w-[280px] sm:min-w-[300px] md:min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-blue-100 snap-center flex-shrink-0">
+					<div class="flex flex-col items-center">
+						<img class="w-24 h-24 mb-5 rounded-2xl object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybyl9A8igYvbCVHOd-yr0ljw1laE0m_INijPeJDhP3w&s=10" alt="Clara Smith">
+						<h5 class="text-xl font-semibold tracking-tight text-blue-950">
+							Clara Smith
+						</h5>
+						<span class="text-sm text-gray-500 mt-1">
+							Expert Advisor
+						</span>
+						<!-- Buttons -->
+						<div class="flex flex-col w-full gap-3 mt-6">
+							<button type="button" class="w-full bg-blue-950 text-white font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-blue-900 transition duration-200">
+								Request Assistance
+							</button>
+							<button type="button"class="w-full bg-white text-blue-950 font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500  transition duration-200">
+								Message
+							</button>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Agent Card -->
+				<div class="min-w-[280px] sm:min-w-[300px] md:min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-blue-100 snap-center flex-shrink-0">
+					<div class="flex flex-col items-center">
+						<img class="w-24 h-24 mb-5 rounded-2xl border object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNMgdYnnT3lLj-pjeDfTMO-fI0C5CpwOEUKgQnyzhWGw&s=10" alt="Lara Dev">
+						<h5 class="text-xl font-semibold tracking-tight text-blue-950">
+							Pratik Rage
+						</h5>
+						<span class="text-sm text-gray-500 mt-1">
+							Expert Advisor
+						</span>
+						<!-- Buttons -->
+						<div class="flex flex-col w-full gap-3 mt-6">
+							<button type="button" class="w-full bg-blue-950 text-white font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-blue-900 transition duration-200">
+								Request Assistance
+							</button>
+							<button type="button"class="w-full bg-white text-blue-950 font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500  transition duration-200">
+								Message
+							</button>
+						</div>
+					</div>
+				</div>
+			
+				<!-- Agent Card -->
+				<div class="min-w-[280px] sm:min-w-[300px] md:min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-blue-100 snap-center flex-shrink-0">
+					<div class="flex flex-col items-center">
+						<img class="w-24 h-24 mb-5 rounded-2xl object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoMHCUdcVggTzArS_JQjMgtir5IdoCCxnsjVFYNK2eew&s=10" alt="Lara Dev">
+						<h5 class="text-xl font-semibold tracking-tight text-blue-950">
+							Maithili Chavan
+						</h5>
+						<span class="text-sm text-gray-500 mt-1">
+							Expert Advisor
+						</span>
+						<!-- Buttons -->
+						<div class="flex flex-col w-full gap-3 mt-6">
+							<button type="button" class="w-full bg-blue-950 text-white font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-blue-900 transition duration-200">
+								Request Assistance
+							</button>
+							<button type="button"class="w-full bg-white text-blue-950 font-semibold text-sm px-5 py-3 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500  transition duration-200">
+								Message
+							</button>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+		<!-- Statistics / Services / FAQ -->
+		<section class="bg-white px-5 py-12">	
+			<div class="max-w-6xl mx-auto">
+				<!-- Services -->
+				<div class="mt-5">
+					<h2 class="text-2xl font-bold text-blue-950 text-center">
+						Our Services
+					</h2>
+					<p class="text-center text-gray-600 mt-2 mb-8">
+						From finding the right property to managing it with ease, we're here for every step of your property journey.
+					</p>
+
+					<!-- Services Cards -->
+					<div class="flex gap-5 overflow-x-auto pb-6">
+						<div class="min-w-[280px] sm:min-w-[320px] p-6 border border-blue-100 rounded-xl shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300">
+							<h3 class="text-lg font-bold text-blue-950">
+								Property Buying
+							</h3>
+							<p class="mt-2 text-gray-600">
+								Find properties that match your needs and budget.
+							</p>
+						</div>
+
+						<div class="min-w-[280px] sm:min-w-[320px] p-6 border border-blue-100 rounded-xl shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300">
+							<h3 class="text-lg font-bold text-blue-950">
+								Property Selling
+							</h3>
+							<p class="mt-2 text-gray-600">
+								List your property and connect with potential buyers.
+							</p>
+						</div>
+
+						<div class="min-w-[280px] sm:min-w-[320px] p-6 border border-blue-100 rounded-xl shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300">
+							<h3 class="text-lg font-bold text-blue-950">
+								Property Investment
+							</h3>
+							<p class="mt-2 text-gray-600">
+								Explore opportunities with long-term investment potential.
+							</p>
+						</div>
+
+						<div class="min-w-[280px] sm:min-w-[320px] p-6 border border-blue-100 rounded-xl shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300">
+							<h3 class="text-lg font-bold text-blue-950">
+								Property Consultation
+							</h3>
+							<p class="mt-2 text-gray-600">
+								Get guidance from experienced property professionals.
+							</p>
+						</div>
+
+						<div class="min-w-[280px] sm:min-w-[320px] p-6 border border-blue-100 rounded-xl shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300">
+							<h3 class="text-lg font-bold text-blue-950">
+								Property Maintenance
+							</h3>
+							<p class="mt-2 text-gray-600">
+								Don't want to manage your property yourself? We can do it for you! Tenant screening, property maintenance and much more.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Quick Actions -->
+		<section class="bg-blue-50 px-5 py-12">
+			<div class="max-w-5xl mx-auto text-center">
+				<h2 class="text-2xl md:text-3xl font-bold text-blue-950">
+					Your Property Journey Starts Here
+				</h2>
+				<p class="mt-2 mb-8 text-gray-600">
+					Explore, invest, sell, or manage your property with Live Property.
+				</p>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+					<a href="#" class="bg-blue-950 text-white font-semibold px-6 py-4 rounded-lg border border-blue-950 hover:bg-orange-500 hover:border-orange-500 transition duration-200">
+						Browse Properties
+					</a>
+					<a href="#" class="bg-white text-blue-950 font-semibold px-6 py-4 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition duration-200">
+						Buy a Property
+					</a>
+					<a href="#" class="bg-white text-blue-950 font-semibold px-6 py-4 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition duration-200">
+						Sell / List Property
+					</a>
+					<a href="#" class="bg-white text-blue-950 font-semibold px-6 py-4 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition duration-200">
+						Property Investment
+					</a>
+					<a href="#" class="bg-white text-blue-950 font-semibold px-6 py-4 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition duration-200">
+						Property Management
+					</a>
+					<a href="#" class="bg-white text-blue-950 font-semibold px-6 py-4 rounded-lg border border-blue-950 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition duration-200">
+						Contact Us
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonials -->
+		<section class="bg-blue-50 px-5 py-12">
+
+		<div class="max-w-6xl mx-auto">
+
+			<h2 class="text-2xl md:text-3xl font-bold text-blue-950 text-center">
+				What Our Clients Say
+			</h2>
+
+			<p class="text-center text-gray-600 mt-2 mb-8">
+				Real experiences from people who trusted us with their property journey.
+			</p>
+
+
+			<!-- Testimonial Cards -->
+			<div class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory">
+				<!-- Testimonial 1 -->
+				<div class="w-[300px] sm:min-w-[340px] bg-white p-6 rounded-xl border border-blue-100 shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300 snap-center flex-shrink-0">
+					<div class="flex items-center gap-4 pb-6">
+						<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Priya Sharma" class="h-12 w-12 rounded-full object-cover">
+						<div>
+							<h3 class="text-lg font-bold text-blue-950">
+								Priya Sharma
+							</h3>
+							<p class="text-sm text-gray-500">
+								Home Buyer
+							</p>
+						</div>
+					</div>
+					<div class="flex gap-1 mb-4">
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+					</div>
+					<p class="text-gray-600 leading-relaxed">
+						"Live Property made finding our new home so much easier. The team understood what we were looking for and helped us find a property that was perfect for our family."
+					</p>
+				</div>
+
+				<!-- Testimonial 2 -->
+				<div class="w-[300px] sm:min-w-[340px] bg-white p-6 rounded-xl border border-blue-100 shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300 snap-center flex-shrink-0">
+					<div class="flex items-center gap-4 pb-6">
+						<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Rahul Patil" class="h-12 w-12 rounded-full object-cover">
+						<div>
+							<h3 class="text-lg font-bold text-blue-950">
+								Rahul Patil
+							</h3>
+							<p class="text-sm text-gray-500">
+								Property Seller
+							</p>
+						</div>
+					</div>
+					<div class="flex gap-1 mb-4">
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+					</div>
+					<p class="text-gray-600 leading-relaxed">
+						"Selling my property felt complicated at first, but the process was much smoother than I expected. I received helpful guidance and was able to connect with serious buyers."
+					</p>
+				</div>
+
+				<!-- Testimonial 3 -->
+				<div class="w-[300px] sm:min-w-[340px] bg-white p-6 rounded-xl border border-blue-100 shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300 snap-center flex-shrink-0">
+					<div class="flex items-center gap-4 pb-6">
+						<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sneha Joshi" class="h-12 w-12 rounded-full object-cover">
+						<div>
+							<h3 class="text-lg font-bold text-blue-950">
+								Sneha Joshi
+							</h3>
+							<p class="text-sm text-gray-500">
+								Property Investor
+							</p>
+						</div>
+					</div>
+					<div class="flex gap-1 mb-4">
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+					</div>
+					<p class="text-gray-600 leading-relaxed">
+						"I was looking for a property with good investment potential. The information and guidance I received helped me compare my options and make a much more confident decision."
+					</p>
+				</div>
+
+				<!-- Testimonial 4 -->
+				<div class="w-[300px] sm:min-w-[340px] bg-white p-6 rounded-xl border border-blue-100 shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300 snap-center flex-shrink-0">
+					<div class="flex items-center gap-4 pb-6">
+						<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Amit Kulkarni" class="h-12 w-12 rounded-full object-cover">
+						<div>
+							<h3 class="text-lg font-bold text-blue-950">
+								Amit Kulkarni
+							</h3>
+							<p class="text-sm text-gray-500">
+								Home Buyer
+							</p>
+						</div>
+					</div>
+
+					<div class="flex gap-1 mb-4">
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+					</div>
+					<p class="text-gray-600 leading-relaxed">
+						"The property search was straightforward and the team was responsive whenever I had questions. I appreciated having different options to compare before making my choice."
+					</p>
+				</div>
+
+				<!-- Testimonial 5 -->
+				<div class="w-[300px] sm:min-w-[340px] bg-white p-6 rounded-xl border border-blue-100 shadow-sm hover:shadow-[0_8px_25px_rgba(249,115,22,0.3)] transition duration-300 snap-center flex-shrink-0">
+					<div class="flex items-center gap-4 pb-6">
+						<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Neha Deshmukh" class="h-12 w-12 rounded-full object-cover">
+						<div>
+							<h3 class="text-lg font-bold text-blue-950">
+								Neha Deshmukh
+							</h3>
+							<p class="text-sm text-gray-500">
+								Property Owner
+							</p>
+						</div>
+					</div>
+					<div class="flex gap-1 mb-4">
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+						<span class="text-orange-500">★</span>
+					</div>
+					<p class="text-gray-600 leading-relaxed">
+						"Managing a property from a distance was becoming difficult for me. Having professional support for the day-to-day management made things much easier and more convenient."
+					</p>
+				</div>
+			</div>
+		</div>
+		</section>
+		<section>
+			<!-- FAQ -->
+			<div class="mt-16 max-w-4xl mx-auto mb-20 px-10">
+				<h2 class="text-2xl font-bold text-blue-950 mb-6 text-center">
+					Frequently Asked Questions
+				</h2>
+				<!-- FAQ 1 -->
+				<details class="border-b border-blue-100">
+					<summary class="flex justify-between items-center py-5 cursor-pointer font-semibold text-blue-950">
+						<span>How can I find a property?</span>
+						<span class="text-orange-500 text-xl">+</span>
+					</summary>
+					<p class="pb-5 text-gray-600">
+						You can browse our listed properties and filter them according
+						to location, type, price, and other requirements.
+					</p>
+				</details>
+				<!-- FAQ 2 -->
+				<details class="border-b border-blue-100">
+					<summary class="flex justify-between items-center py-5 cursor-pointer font-semibold text-blue-950">
+						<span>Can I list my property?</span>
+						<span class="text-orange-500 text-xl">+</span>
+					</summary>
+					<p class="pb-5 text-gray-600">
+						Yes. Property owners can list their residential, commercial,
+						agricultural, or land properties through Live Property.
+					</p>
+				</details>
+				<!-- FAQ 3 -->
+				<details class="border-b border-blue-100">
+					<summary class="flex justify-between items-center py-5 cursor-pointer font-semibold text-blue-950">
+						<span>Do you provide property consultation?</span>
+						<span class="text-orange-500 text-xl">+</span>
+					</summary>
+					<p class="pb-5 text-gray-600">
+						Yes. Our property professionals can help you understand
+						available options and make informed property decisions.
+					</p>
+				</details>
+
+				<!-- FAQ 4 -->
+				<details class="border-b border-blue-100">
+					<summary class="flex justify-between items-center py-5 cursor-pointer font-semibold text-blue-950">
+						<span>What types of properties are available?</span>
+						<span class="text-orange-500 text-xl">+</span>
+					</summary>
+					<p class="pb-5 text-gray-600">
+						We can feature residential properties, commercial properties,
+						plots of land, agricultural land, villas, and other property types.
+					</p>
+				</details>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-blue-950 text-white p-3">
+		<p class="text-center mt-2">&copy Live Property 2026. All rights reserved.</p>
+	</footer>
+  </body>
+</html>
